@@ -319,7 +319,7 @@ queueMicrotask(() => {
 
   const getComment = async () => {
     try {
-      const res = await fetch('https://yesui.xn--uir33bj60ds4tuid7e.cn/api/comment?type=recent&count=6', { method: 'GET' })
+      const res = await fetch('http://154.9.255.164:52/api/comment?type=recent&count=6', { method: 'GET' })
       const result = await res.json()
       const walineArray = result.data.map(e => {
         return {

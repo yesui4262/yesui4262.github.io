@@ -59,7 +59,7 @@
   isHome: false,
   isHighlightShrink: false,
   isToc: false,
-  postUpdate: '2024-03-27 18:27:29',
+  postUpdate: '2024-03-30 21:02:21',
   postMainColor: '',
 }</script><noscript><style type="text/css">
   #nav {
@@ -358,7 +358,7 @@ queueMicrotask(() => {
   const initWaline = () => {
     const waline = Waline.init(Object.assign({
       el: '#waline-wrap',
-      serverURL: 'https://yesui.xn--uir33bj60ds4tuid7e.cn/',
+      serverURL: 'http://154.9.255.164:52/',
       pageview: true,
       dark: 'html[data-theme="dark"]',
       path: window.location.pathname,
@@ -425,7 +425,7 @@ queueMicrotask(() => {
 
   const getComment = async () => {
     try {
-      const res = await fetch('https://yesui.xn--uir33bj60ds4tuid7e.cn/api/comment?type=recent&count=6', { method: 'GET' })
+      const res = await fetch('http://154.9.255.164:52/api/comment?type=recent&count=6', { method: 'GET' })
       const result = await res.json()
       const walineArray = result.data.map(e => {
         return {
